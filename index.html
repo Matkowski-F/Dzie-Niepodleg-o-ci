@@ -297,8 +297,69 @@ footer {
             <h3>Hymn Polski</h3>
             <p>
                 Mazurek Dąbrowskiego jest oficjalnym hymnem
-                narodowym Rzeczypospolitej Polskiej.
-            </p>
+                narodowym Rzeczypospolitej Polskiej. ----------------------------------
+                <style>
+.hymn-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hymn-title {
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hymn-overlay {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    line-height: 1.6;
+}
+
+.hymn-container:hover .hymn-overlay {
+    display: block;
+}
+</style>
+
+<div class="hymn-container">
+    <h3 class="hymn-title">Hymn</h3>
+
+    <div class="hymn-overlay">
+        <h3>Mazurek Dąbrowskiego</h3>
+
+        Jeszcze Polska nie zginęła,<br>
+        Kiedy my żyjemy.<br>
+        Co nam obca przemoc wzięła,<br>
+        Szablą odbierzemy.<br><br>
+
+        Marsz, marsz, Dąbrowski,<br>
+        Z ziemi włoskiej do Polski.<br>
+        Za twoim przewodem<br>
+        Złączym się z narodem.<br><br>
+
+        Przejdziem Wisłę, przejdziem Wartę,<br>
+        Będziem Polakami.<br>
+        Dał nam przykład Bonaparte,<br>
+        Jak zwyciężać mamy.<br><br>
+
+        Marsz, marsz, Dąbrowski,<br>
+        Z ziemi włoskiej do Polski.<br>
+        Za twoim przewodem<br>
+        Złączym się z narodem.
+    </div>
+</div>
+            </p>  ---------------------------------
         </div>
     </div>
 </section>
