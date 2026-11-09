@@ -182,6 +182,49 @@ footer {
         padding: 35px 6%;
     }
 }
+    .hymn-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hymn-title {
+    color: #bd172d;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hymn-overlay {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: white;
+    color: black;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.hymn-container:hover .hymn-overlay {
+    display: block;
+}
+
+.hymn-overlay audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
 </style>
 </head>
 
@@ -293,122 +336,68 @@ footer {
                 umieszczony na czerwonym tle.
             </p>
         </div>
-        <div class="card">
-            <h3>Hymn Polski</h3>
-            <p>
-                Mazurek Dąbrowskiego jest oficjalnym hymnem
-                narodowym Rzeczypospolitej Polskiej. 
-                <style>
-.hymn-container {
-    position: relative;
-    display: inline-block;
-}
+        
+<div class="card">
+    <h3>Hymn Polski</h3>
 
-.hymn-title {
-    color: #000;
-    font-size: 24px;
-    cursor: pointer;
-    font-weight: bold;
-}
+    <p>
+        Mazurek Dąbrowskiego jest oficjalnym hymnem
+        narodowym Rzeczypospolitej Polskiej.
+    </p>
 
-.hymn-overlay {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 250px;
-    max-height: 300px;
+    <div class="hymn-container">
+        <h3 class="hymn-title">Hymn</h3>
 
-    overflow-y: scroll;
-    overflow-x: hidden;
+        <div class="hymn-overlay">
+            <h3>Mazurek Dąbrowskiego</h3>
 
-    background: white;
-    color: black;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 100;
-    line-height: 1.6;
-    box-sizing: border-box;
-}
+            Jeszcze Polska nie zginęła,<br>
+            Kiedy my żyjemy.<br>
+            Co nam obca przemoc wzięła,<br>
+            Szablą odbierzemy.<br><br>
 
-                    .hymn-container audio {
-    width: 70%;
-    max-width: 70%;
-    box-sizing: border-box;
-    display: block;
-}
-                    
-.hymn-container:hover .hymn-overlay {
-    display: block;
-}
-                    .hymn-player {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    margin: 10px 0;
-}
-</style>
+            Marsz, marsz, Dąbrowski,<br>
+            Z ziemi włoskiej do Polski.<br>
+            Za twoim przewodem<br>
+            Złączym się z narodem.<br><br>
 
-<div class="hymn-container">
-    <h3 class="hymn-title">Hymn</h3>
+            Przejdziem Wisłę, przejdziem Wartę,<br>
+            Będziem Polakami.<br>
+            Dał nam przykład Bonaparte,<br>
+            Jak zwyciężać mamy.<br><br>
 
-    <div class="hymn-overlay">
-        <h3>Mazurek Dąbrowskiego</h3>
+            Marsz, marsz, Dąbrowski,<br>
+            Z ziemi włoskiej do Polski.<br>
+            Za twoim przewodem<br>
+            Złączym się z narodem.<br><br>
 
-        Jeszcze Polska nie zginęła,<br>
-        Kiedy my żyjemy.<br>
-        Co nam obca przemoc wzięła,<br>
-        Szablą odbierzemy.<br><br>
+            Jak Czarniecki do Poznania<br>
+            Po szwedzkim zaborze,<br>
+            Dla ojczyzny ratowania<br>
+            Wrócim się przez morze.<br><br>
 
-        Marsz, marsz, Dąbrowski,<br>
-        Z ziemi włoskiej do Polski.<br>
-        Za twoim przewodem<br>
-        Złączym się z narodem.<br><br>
+            Marsz, marsz, Dąbrowski,<br>
+            Z ziemi włoskiej do Polski.<br>
+            Za twoim przewodem<br>
+            Złączym się z narodem.<br><br>
 
-        Przejdziem Wisłę, przejdziem Wartę,<br>
-        Będziem Polakami.<br>
-        Dał nam przykład Bonaparte,<br>
-        Jak zwyciężać mamy.<br><br>
+            Już tam ojciec do swej Basi<br>
+            Mówi zapłakany –<br>
+            Słuchaj jeno, pono nasi<br>
+            Biją w tarabany.<br><br>
 
-Marsz, marsz, Dąbrowski,<br>
-Z ziemi włoskiej do Polski.<br>
-Za twoim przewodem<br>
-Złączym się z narodem.<br><br>
+            Marsz, marsz, Dąbrowski,<br>
+            Z ziemi włoskiej do Polski.<br>
+            Za twoim przewodem<br>
+            Złączym się z narodem.<br><br>
 
-Jak Czarniecki do Poznania<br>
-Po szwedzkim zaborze,<br>
-Dla ojczyzny ratowania<br>
-Wrócim się przez morze.<br><br>
-
-Marsz, marsz, Dąbrowski,<br>
-Z ziemi włoskiej do Polski.<br>
-Za twoim przewodem<br>
-Złączym się z narodem.<br><br>
-
-Już tam ojciec do swej Basi<br>
-Mówi zapłakany –<br>
-Słuchaj jeno, pono nasi<br>
-Biją w tarabany.<br><br>
-
-Marsz, marsz, Dąbrowski,<br>
-Z ziemi włoskiej do Polski.<br>
-Za twoim przewodem<br>
-Złączym się z narodem.
-    </div>
-</div>
-            <div class="hymn-container"> --------------------
             <audio controls>
-    <source src="hymn.mp3" type="audio/mpeg">
-    Twoja przeglądarka nie obsługuje odtwarzania audio.
-            </div>
+                <source src="hymn.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie obsługuje audio.
             </audio>
-            </p>  
         </div>
     </div>
+</div>
 </section>
 
 
