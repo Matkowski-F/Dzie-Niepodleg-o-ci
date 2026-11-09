@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 Listopada – Narodowe Święto Niepodległości</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(120deg, #b51225, #e63950);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffb3bd;
+}
+
+section {
+    padding: 55px 10%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #bd172d;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #bd172d;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.timeline {
+    border-left: 4px solid #bd172d;
+    padding-left: 25px;
+}
+
+.event {
+    margin-bottom: 30px;
+}
+
+.event h3 {
+    color: #bd172d;
+    margin-bottom: 8px;
+}
+
+.flag {
+    width: 240px;
+    height: 150px;
+    margin: 25px auto;
+    border: 1px solid #ddd;
+    background: linear-gradient(to bottom, white 50%, #dc143c 50%);
+}
+
+.quiz {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.quiz button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 7px;
+    background: #bd172d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background: #8d1021;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin: 6px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>11 LISTOPADA</h1>
+    <p>Narodowe Święto Niepodległości 🇵🇱</p>
+    <p>„Jeszcze Polska nie zginęła!”</p>
+</header>
+
+<nav>
+    <a href="#historia">Historia</a>
+    <a href="#piłsudski">Piłsudski</a>
+    <a href="#daty">Daty</a>
+    <a href="#symbole">Symbole</a>
+    <a href="#tradycje">Tradycje</a>
+    <a href="#ciekawostki">Ciekawostki</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="historia">
+    <h2>Historia odzyskania niepodległości</h2>
+    <p>
+        11 listopada 1918 roku Polska odzyskała niepodległość
+        po 123 latach zaborów. Przez wiele pokoleń Polacy
+        walczyli o wolność i zachowanie własnej kultury,
+        języka oraz tradycji.
+    </p>
+    <p>
+        W wyniku rozbiorów dokonanych przez Rosję, Prusy
+        i Austrię Polska zniknęła z mapy Europy w 1795 roku.
+        Dopiero zakończenie I wojny światowej stworzyło
+        szansę na odbudowę państwa polskiego.
+    </p>
+</section>
+
+<section id="piłsudski">
+    <h2>Józef Piłsudski</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Kim był?</h3>
+            <p>
+                Józef Piłsudski był polskim działaczem
+                niepodległościowym, dowódcą wojskowym
+                i politykiem.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Legiony Polskie</h3>
+            <p>
+                W czasie I wojny światowej organizował
+                polskie formacje wojskowe walczące
+                o niepodległość.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Odbudowa Polski</h3>
+            <p>
+                11 listopada 1918 roku przejął władzę
+                wojskową w Warszawie i odegrał ważną rolę
+                w odrodzeniu państwa.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="daty">
+    <h2>Najważniejsze daty historyczne</h2>
+    <div class="timeline">
+        <div class="event">
+            <h3>1772 rok</h3>
+            <p>Pierwszy rozbiór Polski.</p>
+        </div>
+        <div class="event">
+            <h3>1793 rok</h3>
+            <p>Drugi rozbiór Polski.</p>
+        </div>
+        <div class="event">
+            <h3>1795 rok</h3>
+            <p>Trzeci rozbiór Polski. Państwo polskie znika z mapy.</p>
+        </div>
+        <div class="event">
+            <h3>1914 rok</h3>
+            <p>Wybuch I wojny światowej.</p>
+        </div>
+        <div class="event">
+            <h3>1918 rok</h3>
+            <p>Odzyskanie przez Polskę niepodległości.</p>
+        </div>
+    </div>
+</section>
+
+<section id="symbole">
+    <h2>Polskie symbole narodowe</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Flaga Polski</h3>
+            <div class="flag"></div>
+            <p>Biel i czerwień są barwami narodowymi Polski.</p>
+        </div>
+        <div class="card">
+            <h3>Godło Polski</h3>
+            <p>
+                Godłem Polski jest biały orzeł w złotej koronie,
+                umieszczony na czerwonym tle.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Hymn Polski</h3>
+            <p>
+                Mazurek Dąbrowskiego jest oficjalnym hymnem
+                narodowym Rzeczypospolitej Polskiej.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="tradycje">
+    <h2>Jak obchodzimy 11 listopada?</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🇵🇱 Wywieszanie flag</h3>
+            <p>Polacy ozdabiają swoje domy biało-czerwonymi flagami.</p>
+        </div>
+        <div class="card">
+            <h3>🎖️ Uroczystości</h3>
+            <p>Odbywają się oficjalne uroczystości i składanie kwiatów.</p>
+        </div>
+        <div class="card">
+            <h3>🎵 Koncerty</h3>
+            <p>Organizowane są koncerty pieśni patriotycznych.</p>
+        </div>
+    </div>
+</section>
+
+<section id="ciekawostki">
+    <h2>Ciekawostki historyczne</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>123 lata</h3>
+            <p>Tyle lat Polska pozostawała pod zaborami.</p>
+        </div>
+        <div class="card">
+            <h3>11 listopada</h3>
+            <p>Data ta symbolizuje odzyskanie przez Polskę wolności.</p>
+        </div>
+        <div class="card">
+            <h3>1918 rok</h3>
+            <p>W tym roku zakończyła się I wojna światowa.</p>
+        </div>
+    </div>
+</section>
+
+<section id="quiz">
+    <h2>Quiz – sprawdź swoją wiedzę!</h2>
+    <div class="quiz">
+        <h3 id="question">Kiedy Polska odzyskała niepodległość?</h3>
+        <div id="answers"></div>
+        <p id="result"></p>
+        <p id="score"></p>
+        <button onclick="nextQuestion()">Następne pytanie</button>
+    </div>
+</section>
+
+<footer>
+    <h3>🇵🇱 Pamiętamy o historii Polski 🇵🇱</h3>
+    <p>11 listopada – Narodowe Święto Niepodległości</p>
+    <p>Strona edukacyjna</p>
+</footer>
+
+<script>
+const questions = [
+{
+    q: "Kiedy Polska odzyskała niepodległość?",
+    a: ["1795 roku", "1918 roku", "1939 roku"],
+    correct: 1
+},
+{
+    q: "Ile lat trwały zabory?",
+    a: ["100 lat", "123 lata", "150 lat"],
+    correct: 1
+},
+{
+    q: "Kto był ważnym przywódcą w 1918 roku?",
+    a: ["Józef Piłsudski", "Mikołaj Kopernik", "Jan III Sobieski"],
+    correct: 0
+},
+{
+    q: "Jak nazywa się polski hymn?",
+    a: ["Bogurodzica", "Rota", "Mazurek Dąbrowskiego"],
+    correct: 2
+},
+{
+    q: "Jakie są polskie barwy narodowe?",
+    a: ["Niebieska i żółta", "Biała i czerwona", "Zielona i biała"],
+    correct: 1
+}
+];
+
+let current = 0;
+let points = 0;
+let answered = false;
+
+function showQuestion() {
+    answered = false;
+    document.getElementById("question").textContent =
+        questions[current].q;
+
+    document.getElementById("result").textContent = "";
+
+    const answers = document.getElementById("answers");
+    answers.innerHTML = "";
+
+    questions[current].a.forEach((answer, index) => {
+        const button = document.createElement("button");
+        button.textContent = answer;
+        button.onclick = () => checkAnswer(index);
+        answers.appendChild(button);
+    });
+
+    document.getElementById("score").textContent =
+        "Punkty: " + points + "/" + questions.length;
+}
+
+function checkAnswer(index) {
+    if (answered) return;
+    answered = true;
+
+    if (index === questions[current].correct) {
+        points++;
+        document.getElementById("result").textContent =
+            "✅ Brawo! Poprawna odpowiedź!";
+    } else {
+        document.getElementById("result").textContent =
+            "❌ Niestety, poprawna odpowiedź to: " +
+            questions[current].a[questions[current].correct];
+    }
+
+    document.getElementById("score").textContent =
+        "Punkty: " + points + "/" + questions.length;
+}
+
+function nextQuestion() {
+    if (current < questions.length - 1) {
+        current++;
+        showQuestion();
+    } else {
+        document.getElementById("question").textContent =
+            "Koniec quizu!";
+        document.getElementById("answers").innerHTML = "";
+        document.getElementById("result").textContent =
+            "Twój wynik: " + points + "/" + questions.length +
+            " punktów!";
+        document.getElementById("score").textContent =
+            "Dziękujemy za udział!";
+        document.querySelector(".quiz button").textContent =
+            "Zagraj ponownie";
+        document.querySelector(".quiz button").onclick = restart;
+    }
+}
+
+function restart() {
+    current = 0;
+    points = 0;
+    document.querySelector(".quiz button").textContent =
+        "Następne pytanie";
+    document.querySelector(".quiz button").onclick = nextQuestion;
+    showQuestion();
+}
+
+showQuestion();
+</script>
+
+</body>
+</html>
